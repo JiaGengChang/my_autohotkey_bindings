@@ -61,14 +61,14 @@ update_traytip()
 ; - Rebinds --------------------------------------------------
 
 ;; Common to both numlock states:
-k::Numpad5
+i::Numpad5
 /::NumpadDiv
 =::NumpadAdd
 -::NumpadSub
 +8::NumpadMult
-h::Numpad0
+m::Numpad0
 0::Numpad0
-n::NumpadDot  ; Period/Greater-Than key
+.::NumpadDot  ; Period/Greater-Than key
 
 SC02B::           ; Backslash/Pipe
     Send {NumLock}
@@ -79,26 +79,26 @@ SC02B::           ; Backslash/Pipe
 
 
 #If (numlock_on() == true)
-    u::Numpad7
-    i::Numpad8
-    o::Numpad9
+    7::Numpad7
+    8::Numpad8
+    9::Numpad9
 
-    j::Numpad4
-    l::Numpad6
+    u::Numpad4
+    o::Numpad6
 
-    m::Numpad1
-    ,::Numpad2
-    .::Numpad3
+    j::Numpad1
+    k::Numpad2
+    l::Numpad3
 
 
 #If (numlock_on() == false)
-    u::NumpadHome
-    i::NumpadUp
-    o::NumpadPgUp
+    7::NumpadHome
+    8::NumpadUp
+    9::NumpadPgUp
 
-    j::NumpadLeft
-    l::NumpadRight
+    u::NumpadLeft
+    o::NumpadRight
 
-    m::NumpadEnd
-    ,::NumpadDown
-    .::NumpadPgDn
+    j::NumpadEnd
+    k::NumpadDown
+    l::NumpadPgDn
